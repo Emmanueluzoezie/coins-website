@@ -4,9 +4,11 @@ const StateContext = createContext()
 
 export const ContextProvider = ({children}) => {
     const [sidebar, setSidebar] = useState(false)
+    const [openLanguage, setOpenLanguage] = useState(false)
+    const [language, setLanguage] = useState("English")
 
     return(
-        <StateContext.Provider value={{ sidebar, setSidebar }}>
+        <StateContext.Provider value={{ sidebar, setSidebar, openLanguage, setOpenLanguage, language, setLanguage }}>
             {children}
         </StateContext.Provider>
     )
