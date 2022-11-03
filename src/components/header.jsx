@@ -15,7 +15,7 @@ const Header = () => {
 
   return (
     <div className="flex justify-between p-5 dark:text-white">
-      <img src={logo} className="w-24" alt="logo" onClick={() => navigate("/")}/>
+      <img src={logo} className="w-24 md:w-36 cursor-pointer" alt="logo" onClick={() => navigate("/")}/>
       <div className="text-2xl cursor-pointer">
         <FiMenu onClick={handleSidebar} className='dark:text-white text-3xl'/>
       </div>

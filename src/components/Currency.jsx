@@ -18,7 +18,7 @@ const Currency = () => {
                   <GrFormClose className='dark:text-white' onClick={() => setCurrencyList(false)} />
               </div>
               <div className='bg-white h-[400px] text-center md:flex justify-center flex-wrap overflow-y-scroll py-4'>{currencyLink.map((item, index) => (
-                  <div key={index} className='my-2 font-bold text-xl cursor-pointer text-gray-700 hover:text-black' onClick={() => handleCurrency(item)}>{item}</div>
+                  <div key={index} className='my-2 font-bold text-xl cursor-pointer text-gray-700 hover:text-black w-[300px] border-2 border-black mx-2' onClick={() => handleCurrency(item)}>{item}</div>
               ))}</div>
           </div>
       </div>
