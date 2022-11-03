@@ -1,18 +1,24 @@
-import {GrMenu} from "react-icons/gr"
+import { FiMenu } from "react-icons/fi"
+import { useNavigate } from "react-router-dom"
 import { useStateContext } from "../context/useStateContext"
+import logo from "../data/cryptol.png"
 
 const Header = () => {
-    const { setSidebar, setOpenLanguage } = useStateContext()
+  const { setSidebar, setOpenLanguage, setCurrencyList } = useStateContext()
+    const navigate = useNavigate()
 
     const handleSidebar= () => {
         setSidebar(true)
         setOpenLanguage(false)
+      setCurrencyList(false)
     }
 
   return (
-    <div className="flex justify-between p-5">
-          <h1 className="text-3xl cursor-pointer">Logo</h1>
-          <GrMenu className="text-3xl cursor-pointer" onClick={handleSidebar}/>
+    <div className="flex justify-between p-5 dark:text-white">
+      <img src={logo} className="w-24" alt="logo" onClick={() => navigate("/")}/>
+      <div className="text-2xl cursor-pointer">
+        <FiMenu onClick={handleSidebar} className='dark:text-white text-3xl'/>
+      </div>
     </div>
   )
 }
