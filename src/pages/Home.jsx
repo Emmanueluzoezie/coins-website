@@ -7,7 +7,7 @@ import { useStateContext } from '../context/useStateContext'
 import { FaArrowRight } from "react-icons/fa"
 import { AiOutlineSlack } from 'react-icons/ai'
 import { MdKeyboardArrowRight } from 'react-icons/md'
-import HomeComponent from '../components/homeComponent'
+import HomeComponent from '../components/Home-component/homeComponent'
 
 const Home = () => {
     const { sidebar, openLanguage } = useStateContext()

@@ -19,6 +19,9 @@ code {
   .bgcolor{
     background-color: #F3BA2F;
   }
+  .hide-image{
+    display: none;
+  }
   .color{
     color: #F3BA2F;
   }
