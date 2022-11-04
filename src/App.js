@@ -13,8 +13,6 @@ function App() {
 
   return (
     <div className='bg-gray-100 dark:dark-theme h-screen'>
-      {openLanguage && <Language />}
-      {currencyList && <Currency />}
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/market' element={<Market />} />

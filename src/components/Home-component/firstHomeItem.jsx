@@ -80,15 +80,15 @@ const FirstHomeItem = () => {
                   <p className='text-xs sm:text-lg'>Lowest transaction fees</p>
               </div>
           </div>
-          <div className='bg-white dark:bg-gray-500 p-14 rounded-3xl'>
-              <div className='md:flex md:items-center bg-yellow-100 dark:bg-[#422401] p-7 rounded-3xl'>
+          <div className='bg-white dark:bg-gray-500 p-10 rounded-3xl'>
+              <div className='md:flex md:items-center bg-yellow-100 dark:bg-[#422401] py-7 px-3 rounded-3xl'>
                   <div className='flex justify-center md:w-[35%] mb-10'>
                       <img src={binanceThree} alt="" className='w-[200px]' />
                   </div>
                   <div className='md:w-[60%] space-y-4'>
                       <h1 className='font-bold text-3xl'>Become The Pumpkin King to Win 1 BTC</h1>
                       <p>Play the game and collect candy! Those who rank in the top 100 will qualify for a share of 1 BTC, 10 BNB, and 10,000 BUSD in spooktacular rewards!</p>
-                      <button className='bgcolor p-3 w-[250px]'>Play Now</button>
+                      <button className='bgcolor rounded-md font-semibold p-3 w-[250px]'>Play Now</button>
                   </div>
               </div>
           </div>

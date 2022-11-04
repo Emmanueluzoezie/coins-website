@@ -8,9 +8,10 @@ import { FaArrowRight } from "react-icons/fa"
 import { AiOutlineSlack } from 'react-icons/ai'
 import { MdKeyboardArrowRight } from 'react-icons/md'
 import HomeComponent from '../components/Home-component/homeComponent'
+import Currency from '../components/Currency'
 
 const Home = () => {
-    const { sidebar, openLanguage } = useStateContext()
+  const { sidebar, openLanguage, currencyList } = useStateContext()
 
   return (
     <div className='relative overflow-y-scroll bg-inherit'>
@@ -23,6 +24,8 @@ const Home = () => {
         )}
          
         <Header />
+      {openLanguage && <Language />}
+      {currencyList && <Currency />}
          <HomeComponent />
     </div>
   )
