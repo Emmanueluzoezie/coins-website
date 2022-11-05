@@ -18,7 +18,7 @@ const Language = () => {
                   <GrFormClose className='dark:text-white' onClick={() => setOpenLanguage(false)} />
               </div>
                   <div className='bg-white h-[400px] text-center md:flex justify-center flex-wrap overflow-y-scroll py-4'>{languageLinks.map((item, index) => (
-                      <div key={index} className='my-2 font-bold text-xl cursor-pointer text-gray-700 hover:text-black' onClick={() => handleLanguage(item)}>{item}</div>
+                      <div key={index} className='my-2 font-bold text-xl cursor-pointer text-gray-700 hover:text-black w-[300px] mx-2 flex' onClick={() => handleLanguage(item)}>{item}</div>
                   ))}</div>
           </div>
       </div>
